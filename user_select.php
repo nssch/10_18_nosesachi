@@ -63,6 +63,64 @@ if ($status == false) {
             padding: 10px;
             font-size: 16px;
         }
+
+        header {
+            height: 60px;
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        nav ul {
+            position: relative;
+            left: 10%;
+            display: table;
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+
+        }
+
+        nav ul li {
+            display: inline-block;
+            width: 150px;
+        }
+
+        nav ul li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 10px 0;
+            text-decoration: none;
+            color: #aaa;
+        }
+
+        nav ul li.current {
+            font-weight: bold;
+            border-top: 5px solid #00B0F0;
+        }
+
+        nav ul li.current a {
+            color: #00B0F0;
+        }
+
+        nav ul li a:hover {
+            color: #0089BB;
+            background-color: #FBFBDD;
+        }
+
+        nav ul li:hover {
+            border-top: 5px solid #F8E750;
+        }
     </style>
 </head>
 
@@ -72,7 +130,7 @@ if ($status == false) {
         <nav>
             <ul>
                 <li class="current"><a href="test.php">入力画面</a></li>
-                <li><a href="select.php">メニュー選択画面</a></li>
+                <li><a href="select.php">メニュー選択</a></li>
                 <li><a href="#">作成中</a></li>
                 <li><a href="#">作成中</a></li>
                 <li><a href="user_index.php">ユーザー登録</a></li>

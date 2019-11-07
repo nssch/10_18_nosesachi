@@ -78,7 +78,7 @@ function checkSessionid()
 function menu()
 {
     $menu = '<li class="current"><a href="test.php">入力画面</a></li>';
-    $menu .= '<li><a href="select.php">メニュー選択画面</a></li>';
+    $menu .= '<li><a href="select.php">メニュー選択</a></li>';
     $menu .= '<li><a href="#">作成中</a></li>';
     $menu .= '<li><a href="#">作成中</a></li>';
     $menu .= '<li><a href="login.php">ログアウト</a></li>';
@@ -87,7 +87,7 @@ function menu()
 function kanri_menu()
 {
     $kanri_menu = '<li class="current"><a href="test.php">入力画面</a></li>';
-    $kanri_menu .= '<li><a href="select.php">メニュー選択画面</a></li>';
+    $kanri_menu .= '<li><a href="select.php">メニュー選択</a></li>';
     $kanri_menu .= '<li><a href="#">作成中</a></li>';
     $kanri_menu .= '<li><a href="#">作成中</a></li>';
     $kanri_menu .= '<li><a href="user_index.php">ユーザー登録</a></li>';

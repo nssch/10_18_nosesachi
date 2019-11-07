@@ -25,6 +25,92 @@ $pdo = connectToDb();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        header {
+            height: 60px;
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            padding-right: 100px;
+            padding-left: 100px;
+
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        nav ul {
+            position: relative;
+            left: 10%;
+            display: table;
+            margin: 0 auto;
+            padding: 0;
+            width: 80%;
+            text-align: center;
+
+        }
+
+        nav ul li {
+            display: table-cell;
+            width: 130px;
+        }
+
+        nav ul li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 10px 0;
+            text-decoration: none;
+            color: #aaa;
+        }
+
+        nav ul li.current {
+            font-weight: bold;
+            border-top: 5px solid #00B0F0;
+        }
+
+        nav ul li.current a {
+            color: #00B0F0;
+        }
+
+        nav ul li a:hover {
+            color: #0089BB;
+            background-color: #FBFBDD;
+        }
+
+        nav ul li:hover {
+            border-top: 5px solid #F8E750;
+        }
+
+        .button {
+            position: relative;
+            background-color: #09b0fd;
+            border-radius: 4px;
+            color: #fff;
+            line-height: 20px;
+            -webkit-transition: none;
+            transition: none;
+            box-shadow: 0 3px 0 #09b0fd;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+            width: 50%;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .button:hover {
+            background-color: #31c8aa;
+            box-shadow: 0 3px 0 #23a188;
+        }
+
+        .button:active {
+            top: 3px;
+            box-shadow: none;
+        }
+    </style>
 
 </head>
 
@@ -57,7 +143,7 @@ $pdo = connectToDb();
                     <h3>現体重</h3>
                     <input type="number" name="weight" id="weight">
                     <h3>半年間で何kg減らす？</h3>
-                    <input type="number" name="loss" id="loss">
+                    <input type="number" name="loss" id="loss">kg
 
                 </form>
 

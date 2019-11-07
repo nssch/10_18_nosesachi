@@ -46,7 +46,7 @@ if ($status == false) {
         <nav>
             <ul>
                 <li class="current"><a href="test.php">入力画面</a></li>
-                <li><a href="select.php">メニュー選択画面</a></li>
+                <li><a href="select.php">メニュー選択</a></li>
                 <li><a href="#">作成中</a></li>
                 <li><a href="#">作成中</a></li>
                 <li><a href="user_index.php">ユーザー登録</a></li>

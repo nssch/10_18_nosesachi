@@ -73,7 +73,67 @@ $view = '';
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        header {
+            height: 60px;
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            padding-right: 100px;
+            padding-left: 100px;
 
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        nav ul {
+            position: relative;
+            left: 10%;
+            display: table;
+            margin: 0 auto;
+            padding: 0;
+            width: 80%;
+            text-align: center;
+
+        }
+
+        nav ul li {
+            display: table-cell;
+            width: 130px;
+        }
+
+        nav ul li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 10px 0;
+            text-decoration: none;
+            color: #aaa;
+        }
+
+        nav ul li.current {
+            font-weight: bold;
+            border-top: 5px solid #00B0F0;
+        }
+
+        nav ul li.current a {
+            color: #00B0F0;
+        }
+
+        nav ul li a:hover {
+            color: #0089BB;
+            background-color: #FBFBDD;
+        }
+
+        nav ul li:hover {
+            border-top: 5px solid #F8E750;
+        }
+    </style>
 </head>
 
 <body>
